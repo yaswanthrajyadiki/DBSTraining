@@ -1,0 +1,44 @@
+-- Creating database banking
+-- create database banking;
+-- Use banking database
+-- use banking;
+-- Creating table customer 
+-- create table customer(id INT, name Varchar(50));
+-- ALTER TABLE customer ADD PRIMARY KEY(id);
+-- CREATE TABLE ACCOUNTS(account_number INT NOT NULL AUTO_INCREMENT,
+-- PRIMARY KEY(account_number), account_type VARCHAR(100) NOT NULL, customer_id INT,
+-- CONSTRAINT customer_id FOREIGN KEY(customer_id) REFERENCES customer(id),
+-- created_at date, account_purpose VARCHAR(100),
+-- account_desc text);
+-- Show tables;
+-- desc accounts;
+-- Insert into customer(id, name) values (1, "Raju");
+-- select * from customer;
+-- desc accounts;
+-- Alter table accounts Modify account_purpose VARCHAR(100) NOT NULL;
+-- select sqrt(count(*)) from customer;
+-- drop table customer;
+-- alter table customer add age int;
+-- alter table customer add (address text, mobile_no varchar(15));
+-- desc customer;
+-- Insert into customer values(2, "Kaala", 25, "Mumbai", "88888888888"),(3, "Huma", 24, "Bangalore", "9435768998"),
+-- (4, "Chittamma", 22, "Hyderabad", "9876543210"),(5, "Basha", 30, "Thiruvananthapuram", "9234567801"),
+-- (6, "Manikyam", 45, "Chennai", "912345670");
+-- update customer set age=34 where id=1;
+-- update customer set age=34, name="chitti" where id=1;
+-- select * from customer;
+-- delete from customer where id=1;
+-- select * from customer order by name desc;
+-- select * from customer where name like 'M%' order by name desc;
+-- set autocommit=0;
+-- select * from customer where age=24;
+-- select * from customer where age =24 and name ="Huma";
+--  select * from accounts;
+-- insert into accounts values(1, "savings", 2, now(), "salary", "this account is for salary");
+-- select * from customer as c Inner join accounts as a on c.id=a.customer_id;
+-- select * from customer as c left join accounts as a on c.id=a.customer_id;
+-- select * from customer as c right join accounts as a on c.id=a.customer_id;
+-- alter table customer add constraint unique_customer_id unique(id);
+-- create unique index id on customer(id);
+-- show create table customer;
+-- select c.name, a.account_number from customer as c, accounts as a union select customer_id, account_number from accounts;
