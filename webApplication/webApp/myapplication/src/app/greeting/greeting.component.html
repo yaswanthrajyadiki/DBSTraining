@@ -1,0 +1,22 @@
+<p class="para">
+  greeting works!
+  {{message}}
+</p>
+<div>
+  <input #username (keyup.enter)="addUsername(username.value)" placeholder="username"/>
+  <p> Hello {{username.value}}! </p>
+  Iterating list
+  <ul>
+      <li *ngFor="let name of names">{{name}}</li>
+  </ul>
+  Interating objects
+  <ul *ngFor="let person of persons">
+      <div *ngIf=" person.name!=='laxman' " >
+        <li>{{person.name}}</li>
+        <ul *ngFor="let quality of person.qualities">
+          <li>{{quality}}</li>
+        </ul>
+      </div>
+  </ul>
+
+</div>

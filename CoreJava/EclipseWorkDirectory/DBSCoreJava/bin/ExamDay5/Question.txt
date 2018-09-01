@@ -1,0 +1,3 @@
+1. Create a customer class which will have fields like id and name
+2. Create a list of 5 customers 
+3. Create a thread which will sort list of customers on field id

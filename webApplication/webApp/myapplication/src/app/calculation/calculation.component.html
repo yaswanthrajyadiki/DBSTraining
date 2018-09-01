@@ -1,0 +1,8 @@
+<div>
+  Enter first number <input #numberOne type="number" (input)="number1=+$event.target.value" /><br>
+  Enter second number <input #numberTwo type="number" (input)="number2=+$event.target.value" /><br>
+  <button (click)="addition(numberOne.value, numberTwo.value)">Sum</button>
+  <h3>
+    {{ sum }}
+  </h3>
+</div>

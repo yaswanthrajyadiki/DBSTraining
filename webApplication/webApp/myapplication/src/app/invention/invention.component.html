@@ -1,0 +1,23 @@
+<label> {{nameModel}} </label>
+<div>
+  <input (input)="nameModel = $event.target.value " placeholder="enter name">
+</div>
+<label> {{inventorModel}} </label>
+<div>
+  <input (input)="inventorModel = $event.target.value " placeholder="enter inventor">
+</div>
+<label> {{yearModel}} </label>
+<div>
+  <input (input)="yearModel = $event.target.value " placeholder="enter year">
+</div> 
+<br>
+
+<button class="btn" (click)="createInvention()"> Create Invention </button>
+
+
+
+<li *ngFor="let invention of inventions">
+  <span><b>Name:</b> {{ invention.name }} || </span>
+  <span><b>Inventor:</b> {{ invention.inverntor }} || </span>
+  <span><b>Year:</b> {{ invention.year }} || </span>
+</li>

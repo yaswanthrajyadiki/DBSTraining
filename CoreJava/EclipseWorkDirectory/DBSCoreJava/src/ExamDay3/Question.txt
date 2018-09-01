@@ -1,0 +1,4 @@
+Create a class Customer with customerID, fname, lname, counter and address
+--> Address is a class with properties strret_no, street, city and state
+--> Create a main program in which create an array of customer and store them in file and retrieve 
+	two customers complete details and also the number of objects created

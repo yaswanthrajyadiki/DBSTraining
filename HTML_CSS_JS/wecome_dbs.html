@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head> 
+		<title> Welcome DBS </title>
+		<link rel="shortcut icon" href="DBS-Portfolio-Logo.jpg" />
+	<!-- <style type="text/css"> 
+			body {
+				background-color: yellow
+			}
+			h1 {
+				color: red
+			}
+			p {
+				background-color:white
+			}
+		</style> --> 
+		<link rel="stylesheet" type="text/css" href="style.css">
+		<script src="simple.js"></script>
+		<script> 
+			document.write("Welcome");
+		</script>
+	</head>
+	<body>
+		<div id="header" style="float">
+			<h1> Hello DBS </h1>
+			<p> I am Yaswanth </p>
+		</div>
+		<br>
+		<a href="https://www.msn.com"> Open MSN </a>
+		<br>
+		<!-- <img src="DBS-Portfolio-Logo.jpg"/> -->
+		<!--<table style="width:100%">
+		  <tr>
+			<th>Firstname</th>
+			<th>Lastname</th> 
+			<th>Age</th>
+		  </tr>
+		  <tr>
+			<td>Jill</td>
+			<td>Smith</td>
+			<td>50</td>
+		  </tr>
+		  <tr>
+			<td>Eve</td>
+			<td>Jackson</td>
+			<td>94</td>
+		  </tr>
+		  <tr>
+			<td>John</td>
+			<td>Doe</td>
+			<td>80</td>
+		  </tr>
+		</table>
+		<ol>
+			<li> My </li>
+			<li> Home </li>
+		</ol>
+		<ul>
+			<li> My </li>
+			<li> Home </li>
+		</ul> -->
+		<div id = "onSub"> 
+			<span id="firstnameError"></span>
+			<span id="lastnameError"></span>
+			<form>
+				<br>
+				First name: <input type="text" name="firstname" value="Mickey">
+				<br><br>
+				Last name: <input type="text" name="lastname" value="Mouse">
+				<br><br>
+				<button onclick="validate(firstname, lastname)"> Submit</button>
+			</form> 
+		</div>
+		<h1 onclick="changetext(this)"> Click on this text!</h1>
+		<div>
+			<p>Please click submit button after filling the form.</p>
+			<canvas id="myCanvas" style="background-color:red; height:300; width:400"> </canvas>
+		</div>
+		<script> 
+			var myCanvas = document.getElementById("myCanvas");
+			var canvasContext = myCanvas.getContext("2d");
+			canvasContext.fillStyle = "blue";
+			canvasContext.fillRect(0,0,200,100);
+			function changetext(id) {
+				id.innerHTML = "Hello";
+			}
+		</script>
+	</body>
+</html>
